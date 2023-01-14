@@ -1,0 +1,64 @@
+describe("Multi Item List Form", () => {
+  beforeEach(() => {});
+});
+
+it("Should be able to interact with a multi-item list", () => {
+  cy.visit("http://localhost:3000/");
+  cy.findByRole("link", { name: /Multi-item List/ }).click();
+  cy.findByText("Add Item").click();
+  cy.wait(50);
+  cy.findByLabelText("Part #").type("New Item");
+  cy.get('[data-test="todo-description"]').type("Nice to have");
+  cy.findByLabelText("Medium").click();
+  cy.findAllByText("Confirm").click();
+  cy.wait(50);
+  cy.get('[data-test="edit-0"]').click();
+  cy.findByLabelText("Part #").clear().type("Newer Item");
+  cy.get('[data-test="todo-description"]').clear().type("Nicer to have");
+  cy.findByLabelText("Low").click();
+  cy.findAllByText("Confirm").click();
+  cy.wait(50);
+  cy.get('[data-test="edit-0"]').click();
+  cy.wait(50);
+  cy.findByText("Confirm").click();
+  cy.wait(50);
+  cy.findByText("Add Item").click();
+  cy.findByLabelText("Part #").type("Second Item");
+  cy.get('[data-test="todo-description"]').click().type("Second Item Descrip");
+  cy.findAllByText("Confirm").click();
+  cy.wait(50);
+  cy.get('[data-test="edit-1"]').click();
+  cy.findByLabelText("Part #").clear().type("Secondly Item");
+  cy.get('[data-test="todo-description"]')
+    .clear()
+    .type("Seconder Item Descrip");
+  cy.findByLabelText("Medium").click();
+  cy.findAllByText("Confirm").click();
+  cy.wait(50);
+  cy.findByText("Add Item").click();
+  cy.findByLabelText("Part #").type("Third Item");
+  cy.get('[data-test="todo-description"]').click().type("Third Item Descrip");
+  cy.findAllByText("Confirm").click();
+  cy.wait(50);
+  cy.get('[data-test="edit-2"]').click();
+  cy.findByLabelText("Part #").clear().type("Thirdly Item");
+  cy.get('[data-test="todo-description"]').clear().type("Thirder Item Descrip");
+  cy.findByLabelText("Medium").click();
+  cy.findByText("Confirm").click();
+  cy.wait(50);
+  cy.get('[data-test="delete-0"]').click();
+  cy.findByText("Cancel").click();
+  cy.wait(50);
+  cy.get('[data-test="delete-0"]').click();
+  cy.findByText("Confirm Delete").click();
+  cy.wait(50);
+  cy.get('[data-test="delete-1"]').click();
+  cy.findByText("Cancel").click();
+  cy.wait(50);
+  cy.get('[data-test="delete-1"]').click();
+  cy.findByText("Confirm Delete").click();
+  cy.wait(50);
+  cy.get('[data-test="delete-0"]').click();
+  cy.findByText("Cancel").click();
+  cy.wait(50);
+});

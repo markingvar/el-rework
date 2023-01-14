@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf node_modules package-lock.json .cache public/build && npm install",
+    "build": "remix build",
+    "dev-css:tailwind:": "tailwindcss -w -i styles/tailwind.css -o app/styles/tailwind.css",
+    "dev-css:postcss": "postcss styles --base styles --dir app/styles -w",
+    "css-server": "run-p dev-css:*",
+    "dev": "remix dev",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@reach/dialog": "^0.17.0",
+    "@remix-run/node": "^1.6.3",
+    "@remix-run/react": "^1.6.3",
+    "@remix-run/serve": "^1.6.3",
+    "domain-functions": "^1.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "tailwindcss": "^3.2.4",
+    "zod-to-json-schema": "^3.20.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "@remix-run/dev": "^1.6.3",
+    "@remix-run/eslint-config": "^1.6.3",
+    "@testing-library/cypress": "^8.0.3",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.17",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "cypress": "^10.3.0",
+    "eslint": "^8.19.0",
+    "node-css-mqpacker": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
+    "postcss-nested": "^6.0.0",
+    "typescript": "^4.6.4"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "workspaces": [
+    "packages/electric-ladyland-form"
+  ]
+}

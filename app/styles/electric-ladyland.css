@@ -1,0 +1,177 @@
+fieldset {
+  display: none;
+  border: none;
+}
+
+input[data-sf-input="0-sfr-0"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-0"],
+input[data-sf-input="0-sfr-0"]:target
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-0"],
+input[data-sf-input="0-sfr-1"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-1"],
+input[data-sf-input="0-sfr-1"]:target
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-1"],
+input[data-sf-input="0-sfr-2"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-2"],
+input[data-sf-input="0-sfr-2"]:target
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-2"],
+input[data-sf-input="0-sfr-3"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-3"],
+input[data-sf-input="0-sfr-3"]:target
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-3"],
+input[data-sf-input="0-sfr-4"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-4"],
+input[data-sf-input="0-sfr-4"]:target
+  ~ div
+  fieldset[data-sf-fieldset="0-sfr-4"],
+input[data-sf-input="1-sfr-0"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-0"],
+input[data-sf-input="1-sfr-0"]:target
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-0"],
+input[data-sf-input="1-sfr-1"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-1"],
+input[data-sf-input="1-sfr-1"]:target
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-1"],
+input[data-sf-input="1-sfr-2"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-2"],
+input[data-sf-input="1-sfr-2"]:target
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-2"],
+input[data-sf-input="1-sfr-3"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-3"],
+input[data-sf-input="1-sfr-3"]:target
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-3"],
+input[data-sf-input="1-sfr-4"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-4"],
+input[data-sf-input="1-sfr-4"]:target
+  ~ div
+  fieldset[data-sf-fieldset="1-sfr-4"],
+input[data-sf-input="2-sfr-0"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-0"],
+input[data-sf-input="2-sfr-0"]:target
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-0"],
+input[data-sf-input="2-sfr-1"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-1"],
+input[data-sf-input="2-sfr-1"]:target
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-1"],
+input[data-sf-input="2-sfr-2"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-2"],
+input[data-sf-input="2-sfr-2"]:target
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-2"],
+input[data-sf-input="2-sfr-3"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-3"],
+input[data-sf-input="2-sfr-3"]:target
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-3"],
+input[data-sf-input="2-sfr-4"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-4"],
+input[data-sf-input="2-sfr-4"]:target
+  ~ div
+  fieldset[data-sf-fieldset="2-sfr-4"],
+input[data-sf-input="3-sfr-0"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-0"],
+input[data-sf-input="3-sfr-0"]:target
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-0"],
+input[data-sf-input="3-sfr-1"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-1"],
+input[data-sf-input="3-sfr-1"]:target
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-1"],
+input[data-sf-input="3-sfr-2"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-2"],
+input[data-sf-input="3-sfr-2"]:target
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-2"],
+input[data-sf-input="3-sfr-3"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-3"],
+input[data-sf-input="3-sfr-3"]:target
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-3"],
+input[data-sf-input="3-sfr-4"]:checked
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-4"],
+input[data-sf-input="3-sfr-4"]:target
+  ~ div
+  fieldset[data-sf-fieldset="3-sfr-4"] {
+  display: block;
+}
+
+label[data-sf-label] {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+label[data-sf-label]:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: -24px; /* This will be adjusted */
+    border-radius: 50%;
+    border: 1px solid #6f686a;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+  }
+
+label[data-sf-label]:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: -21px;
+    top: 3px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+  }
+
+input[data-sf-input="0-sfr-0"]:focus ~ div label[data-sf-label="0-sfr-0"]:before, input[data-sf-input="0-sfr-1"]:focus ~ div label[data-sf-label="0-sfr-1"]:before, input[data-sf-input="0-sfr-2"]:focus ~ div label[data-sf-label="0-sfr-2"]:before, input[data-sf-input="0-sfr-3"]:focus ~ div label[data-sf-label="0-sfr-3"]:before, input[data-sf-input="0-sfr-4"]:focus ~ div label[data-sf-label="0-sfr-4"]:before, input[data-sf-input="1-sfr-0"]:focus ~ div label[data-sf-label="1-sfr-0"]:before, input[data-sf-input="1-sfr-1"]:focus ~ div label[data-sf-label="1-sfr-1"]:before, input[data-sf-input="1-sfr-2"]:focus ~ div label[data-sf-label="1-sfr-2"]:before, input[data-sf-input="1-sfr-3"]:focus ~ div label[data-sf-label="1-sfr-3"]:before, input[data-sf-input="1-sfr-4"]:focus ~ div label[data-sf-label="1-sfr-4"]:before, input[data-sf-input="2-sfr-0"]:focus ~ div label[data-sf-label="2-sfr-0"]:before, input[data-sf-input="2-sfr-1"]:focus ~ div label[data-sf-label="2-sfr-1"]:before, input[data-sf-input="2-sfr-2"]:focus ~ div label[data-sf-label="2-sfr-2"]:before, input[data-sf-input="2-sfr-3"]:focus ~ div label[data-sf-label="2-sfr-3"]:before, input[data-sf-input="2-sfr-4"]:focus ~ div label[data-sf-label="2-sfr-4"]:before, input[data-sf-input="3-sfr-0"]:focus ~ div label[data-sf-label="3-sfr-0"]:before, input[data-sf-input="3-sfr-1"]:focus ~ div label[data-sf-label="3-sfr-1"]:before, input[data-sf-input="3-sfr-2"]:focus ~ div label[data-sf-label="3-sfr-2"]:before, input[data-sf-input="3-sfr-3"]:focus ~ div label[data-sf-label="3-sfr-3"]:before, input[data-sf-input="3-sfr-4"]:focus ~ div label[data-sf-label="3-sfr-4"]:before {
+      box-shadow: 0 0px 8px red;
+  }
+
+input[data-sf-input="0-sfr-0"]:checked ~ div label[data-sf-label="0-sfr-0"]:after, input[data-sf-input="0-sfr-0"]:target ~ div label[data-sf-label="0-sfr-0"]:after, input[data-sf-input="0-sfr-1"]:checked ~ div label[data-sf-label="0-sfr-1"]:after, input[data-sf-input="0-sfr-1"]:target ~ div label[data-sf-label="0-sfr-1"]:after, input[data-sf-input="0-sfr-2"]:checked ~ div label[data-sf-label="0-sfr-2"]:after, input[data-sf-input="0-sfr-2"]:target ~ div label[data-sf-label="0-sfr-2"]:after, input[data-sf-input="0-sfr-3"]:checked ~ div label[data-sf-label="0-sfr-3"]:after, input[data-sf-input="0-sfr-3"]:target ~ div label[data-sf-label="0-sfr-3"]:after, input[data-sf-input="0-sfr-4"]:checked ~ div label[data-sf-label="0-sfr-4"]:after, input[data-sf-input="0-sfr-4"]:target ~ div label[data-sf-label="0-sfr-4"]:after, input[data-sf-input="1-sfr-0"]:checked ~ div label[data-sf-label="1-sfr-0"]:after, input[data-sf-input="1-sfr-0"]:target ~ div label[data-sf-label="1-sfr-0"]:after, input[data-sf-input="1-sfr-1"]:checked ~ div label[data-sf-label="1-sfr-1"]:after, input[data-sf-input="1-sfr-1"]:target ~ div label[data-sf-label="1-sfr-1"]:after, input[data-sf-input="1-sfr-2"]:checked ~ div label[data-sf-label="1-sfr-2"]:after, input[data-sf-input="1-sfr-2"]:target ~ div label[data-sf-label="1-sfr-2"]:after, input[data-sf-input="1-sfr-3"]:checked ~ div label[data-sf-label="1-sfr-3"]:after, input[data-sf-input="1-sfr-3"]:target ~ div label[data-sf-label="1-sfr-3"]:after, input[data-sf-input="1-sfr-4"]:checked ~ div label[data-sf-label="1-sfr-4"]:after, input[data-sf-input="1-sfr-4"]:target ~ div label[data-sf-label="1-sfr-4"]:after, input[data-sf-input="2-sfr-0"]:checked ~ div label[data-sf-label="2-sfr-0"]:after, input[data-sf-input="2-sfr-0"]:target ~ div label[data-sf-label="2-sfr-0"]:after, input[data-sf-input="2-sfr-1"]:checked ~ div label[data-sf-label="2-sfr-1"]:after, input[data-sf-input="2-sfr-1"]:target ~ div label[data-sf-label="2-sfr-1"]:after, input[data-sf-input="2-sfr-2"]:checked ~ div label[data-sf-label="2-sfr-2"]:after, input[data-sf-input="2-sfr-2"]:target ~ div label[data-sf-label="2-sfr-2"]:after, input[data-sf-input="2-sfr-3"]:checked ~ div label[data-sf-label="2-sfr-3"]:after, input[data-sf-input="2-sfr-3"]:target ~ div label[data-sf-label="2-sfr-3"]:after, input[data-sf-input="2-sfr-4"]:checked ~ div label[data-sf-label="2-sfr-4"]:after, input[data-sf-input="2-sfr-4"]:target ~ div label[data-sf-label="2-sfr-4"]:after, input[data-sf-input="3-sfr-0"]:checked ~ div label[data-sf-label="3-sfr-0"]:after, input[data-sf-input="3-sfr-0"]:target ~ div label[data-sf-label="3-sfr-0"]:after, input[data-sf-input="3-sfr-1"]:checked ~ div label[data-sf-label="3-sfr-1"]:after, input[data-sf-input="3-sfr-1"]:target ~ div label[data-sf-label="3-sfr-1"]:after, input[data-sf-input="3-sfr-2"]:checked ~ div label[data-sf-label="3-sfr-2"]:after, input[data-sf-input="3-sfr-2"]:target ~ div label[data-sf-label="3-sfr-2"]:after, input[data-sf-input="3-sfr-3"]:checked ~ div label[data-sf-label="3-sfr-3"]:after, input[data-sf-input="3-sfr-3"]:target ~ div label[data-sf-label="3-sfr-3"]:after, input[data-sf-input="3-sfr-4"]:checked ~ div label[data-sf-label="3-sfr-4"]:after, input[data-sf-input="3-sfr-4"]:target ~ div label[data-sf-label="3-sfr-4"]:after {
+    background: #6f686a;
+  }
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border-width: 0;}
